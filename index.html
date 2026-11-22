@@ -152,6 +152,29 @@ footer i { font-family: var(--serif); color: #b6e08f; }
 .rv { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
 .rv.in { opacity: 1; transform: none; }
 
+/* serene background (user Nov 22): bamboo at the edges swaying, falling bamboo leaves, rising steam, 2 distant birds */
+.zen { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+header.top, .demo, .hero, section, footer, .dock, .bar { position: relative; z-index: 2; }
+header.top { position: sticky; z-index: 40; }
+.dock, .bar { position: fixed; z-index: 35; }
+.bamboo { position: absolute; bottom: -20px; height: 104vh; width: auto; opacity: .55; }
+.bamboo.left { left: -36px; } .bamboo.right { right: -36px; }
+.sway { transform-origin: 50% 100%; animation: sway 9s ease-in-out infinite alternate; }
+.s2 { animation-duration: 11s; animation-delay: -4s; } .s3 { animation-duration: 10s; animation-delay: -2s; }
+@keyframes sway { from { transform: rotate(-1.2deg); } to { transform: rotate(1.4deg); } }
+.leaf { position: absolute; top: -40px; left: var(--x); width: var(--s); height: auto; opacity: 0; animation: fall var(--d) linear infinite; animation-delay: var(--dl); }
+@keyframes fall { 0% { transform: translate(0,0) rotate(0); opacity: 0; } 8% { opacity: .7; } 50% { transform: translate(60px, 52vh) rotate(220deg); } 92% { opacity: .55; } 100% { transform: translate(-30px, 108vh) rotate(420deg); opacity: 0; } }
+.steam { position: absolute; bottom: -60px; left: var(--x); width: 140px; height: 220px; border-radius: 50%; background: radial-gradient(ellipse at center, rgba(255,255,255,.95), rgba(246,233,244,.55) 45%, rgba(246,233,244,0) 70%); filter: blur(14px); opacity: 0; animation: steam var(--d) ease-in infinite; animation-delay: var(--dl); }
+@keyframes steam { 0% { transform: translate(-50%, 0) scale(.6); opacity: 0; } 20% { opacity: .9; } 100% { transform: translate(-30%, -70vh) scale(1.8); opacity: 0; } }
+.bird { position: absolute; top: var(--y); left: -60px; width: 30px; opacity: .45; animation: fly var(--d) linear infinite; animation-delay: var(--dl); }
+.bird.b2 { width: 22px; opacity: .35; }
+.bird path { animation: flap 1.4s ease-in-out infinite alternate; transform-origin: 20px 9px; }
+@keyframes fly { from { transform: translate(0, 0); } 50% { transform: translate(55vw, -3vh); } to { transform: translate(112vw, 2vh); } }
+@keyframes flap { from { transform: scaleY(1); } to { transform: scaleY(.45); } }
+@media (max-width: 1100px) { .bamboo { opacity: .28; } }
+@media (max-width: 760px) { .bamboo { opacity: .18; height: 90vh; } .leaf.lg, .steam:nth-of-type(n+3) { display: none; } .leaf { opacity: .4; } }
+@media (prefers-reduced-motion: reduce) { .leaf, .bird, .steam { display: none; } }
+
 @media (max-width: 1000px) {
   .hero, .rooms, .visit, .pride { grid-template-columns: 1fr; }
   .collage { height: 480px; max-width: 620px; }
@@ -177,6 +200,53 @@ footer i { font-family: var(--serif); color: #b6e08f; }
 <style>body{margin:0}</style>
 </head>
 <body>
+
+<div class="zen" aria-hidden="true">
+  <svg class="bamboo left" viewBox="0 0 160 1000" preserveAspectRatio="xMinYMax meet">
+    <defs><linearGradient id="stalk" x1="0" x2="1"><stop offset="0" stop-color="#5f9a3a"/><stop offset=".5" stop-color="#8cc25e"/><stop offset="1" stop-color="#4f8a2c"/></linearGradient>
+    <symbol id="bleaf" viewBox="0 0 60 16"><path d="M0 8 C 18 -2, 42 -1, 60 8 C 42 17, 18 18, 0 8z" fill="#73ad4b"/><path d="M4 8 H56" stroke="#4f8a2c" stroke-width="1" opacity=".5"/></symbol></defs>
+    <g class="sway">
+      <rect x="40" y="80" width="16" height="920" rx="8" fill="url(#stalk)"/>
+      <g fill="#4f8a2c"><rect x="38" y="250" width="20" height="5" rx="2"/><rect x="38" y="470" width="20" height="5" rx="2"/><rect x="38" y="690" width="20" height="5" rx="2"/><rect x="38" y="900" width="20" height="5" rx="2"/></g>
+      <use href="#bleaf" x="54" y="230" width="70" height="20" transform="rotate(-24 54 240)"/>
+      <use href="#bleaf" x="54" y="250" width="58" height="16" transform="rotate(10 54 258)"/>
+      <use href="#bleaf" x="-28" y="450" width="70" height="20" transform="rotate(205 40 460)"/>
+      <use href="#bleaf" x="54" y="670" width="64" height="18" transform="rotate(-14 54 680)"/>
+    </g>
+    <g class="sway s2">
+      <rect x="92" y="300" width="12" height="700" rx="6" fill="url(#stalk)" opacity=".8"/>
+      <g fill="#4f8a2c" opacity=".8"><rect x="90" y="520" width="16" height="4" rx="2"/><rect x="90" y="760" width="16" height="4" rx="2"/></g>
+      <use href="#bleaf" x="102" y="500" width="56" height="16" transform="rotate(-30 102 508)"/>
+      <use href="#bleaf" x="102" y="740" width="50" height="14" transform="rotate(14 102 748)"/>
+    </g>
+  </svg>
+  <svg class="bamboo right" viewBox="0 0 160 1000" preserveAspectRatio="xMaxYMax meet">
+    <g class="sway s3">
+      <rect x="104" y="40" width="16" height="960" rx="8" fill="url(#stalk)"/>
+      <g fill="#4f8a2c"><rect x="102" y="210" width="20" height="5" rx="2"/><rect x="102" y="430" width="20" height="5" rx="2"/><rect x="102" y="660" width="20" height="5" rx="2"/><rect x="102" y="880" width="20" height="5" rx="2"/></g>
+      <use href="#bleaf" x="34" y="190" width="70" height="20" transform="rotate(200 104 200)"/>
+      <use href="#bleaf" x="40" y="415" width="64" height="18" transform="rotate(190 104 424)"/>
+      <use href="#bleaf" x="118" y="640" width="40" height="14" transform="rotate(-20 118 646)"/>
+    </g>
+    <g class="sway s2">
+      <rect x="62" y="360" width="11" height="640" rx="6" fill="url(#stalk)" opacity=".75"/>
+      <use href="#bleaf" x="8" y="560" width="56" height="16" transform="rotate(195 62 568)"/>
+    </g>
+  </svg>
+  <svg class="leaf" style="--x:12vw;--d:17s;--dl:-2s;--s:34px" viewBox="0 0 60 16"><use href="#bleaf"/></svg>
+  <svg class="leaf" style="--x:30vw;--d:23s;--dl:-11s;--s:26px" viewBox="0 0 60 16"><use href="#bleaf"/></svg>
+  <svg class="leaf" style="--x:52vw;--d:20s;--dl:-6s;--s:30px" viewBox="0 0 60 16"><use href="#bleaf"/></svg>
+  <svg class="leaf" style="--x:71vw;--d:26s;--dl:-16s;--s:24px" viewBox="0 0 60 16"><use href="#bleaf"/></svg>
+  <svg class="leaf" style="--x:88vw;--d:19s;--dl:-9s;--s:32px" viewBox="0 0 60 16"><use href="#bleaf"/></svg>
+  <svg class="leaf lg" style="--x:6vw;--d:29s;--dl:-21s;--s:28px" viewBox="0 0 60 16"><use href="#bleaf"/></svg>
+  <svg class="leaf lg" style="--x:95vw;--d:24s;--dl:-3s;--s:22px" viewBox="0 0 60 16"><use href="#bleaf"/></svg>
+  <span class="steam" style="--x:4%;--d:14s;--dl:0s"></span>
+  <span class="steam" style="--x:9%;--d:17s;--dl:-6s"></span>
+  <span class="steam" style="--x:90%;--d:15s;--dl:-3s"></span>
+  <span class="steam" style="--x:95%;--d:18s;--dl:-10s"></span>
+  <svg class="bird" style="--y:11vh;--d:48s;--dl:-8s" viewBox="0 0 40 16"><path d="M2 10 Q 10 2, 20 9 Q 30 2, 38 10" fill="none" stroke="#4a0a44" stroke-width="2.2" stroke-linecap="round"/></svg>
+  <svg class="bird b2" style="--y:16vh;--d:62s;--dl:-30s" viewBox="0 0 40 16"><path d="M2 10 Q 10 2, 20 9 Q 30 2, 38 10" fill="none" stroke="#4a0a44" stroke-width="2.2" stroke-linecap="round"/></svg>
+</div>
 
 <div class="demo">Demo website made for Dinel Massage &amp; Spa. Prices and final details to be confirmed by you.</div>
 
