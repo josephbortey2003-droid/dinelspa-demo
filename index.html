@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Dinel Massage &amp; Spa | East Legon, Accra · Unlimited luxury for body, mind and soul</title>
+<meta name="description" content="Dinel Massage & Spa, Trinity Avenue, East Legon, Accra. Swedish, deep tissue, Thai and hot stone massage, head spa, sauna, facials, waxing and pedicures. 4.9 stars from 170 reviews. Open daily till 10:30 pm. Book on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,500;1,600&family=DM+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* Brand from THEIR logo + photos: plum wordmark #711168, leaf green #73ad4b, tagline "unlimited luxury for body,
+   mind and soul", purple neon treatment room, mint/green uniforms. Layout adapted from Madeline (editorial photo
+   collage, big serif) with a treatment menu that builds a WhatsApp booking. Single light theme. */
+:root {
+  --plum: #711168; --plum-deep: #4a0a44; --plum-soft: #f6e9f4; --lilac: #fbf6fa;
+  --leaf: #73ad4b; --leaf-deep: #4f8a2c; --leaf-soft: #edf6e6;
+  --ink: #241322; --mute: #6f5f6c; --line: #eddfe9; --paper: #fff;
+  --serif: "Playfair Display", Georgia, serif; --sans: "DM Sans", "Segoe UI", system-ui, sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--lilac); color: var(--ink); font: 400 16px/1.65 var(--sans); overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--leaf); outline-offset: 3px; border-radius: 6px; }
+.wrap { max-width: 1200px; margin: 0 auto; padding-left: max(18px, env(safe-area-inset-left, 0px)); padding-right: max(18px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { font-family: var(--serif); font-weight: 800; letter-spacing: -.01em; }
+em { font-family: var(--serif); font-style: italic; font-weight: 500; color: var(--leaf-deep); }
+.demo { background: var(--plum-deep); color: #f3dcef; font-size: 13px; text-align: center; padding: 8px 12px; }
+
+header.top { position: sticky; top: 0; z-index: 20; background: rgba(251,246,250,.9); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 10px; }
+.logo img { width: 150px; height: auto; }
+.top nav { display: flex; gap: 26px; font-weight: 600; font-size: 15px; }
+.top nav a { text-decoration: none; } .top nav a:hover { color: var(--plum); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font: 700 15px/1 var(--sans); padding: 15px 24px; border-radius: 999px; border: 2px solid var(--plum); background: var(--plum); color: #fff; text-decoration: none; cursor: pointer; transition: background .2s, border-color .2s, color .2s, transform .2s; }
+.btn:hover { background: var(--plum-deep); border-color: var(--plum-deep); transform: translateY(-1px); }
+.btn.leaf { background: var(--leaf); border-color: var(--leaf); }
+.btn.leaf:hover { background: var(--leaf-deep); border-color: var(--leaf-deep); }
+.btn.ghost { background: transparent; color: var(--plum); }
+.btn.ghost:hover { background: var(--plum); color: #fff; }
+
+/* HERO editorial collage */
+.hero { display: grid; grid-template-columns: 1fr 1.05fr; gap: 50px; align-items: center; padding-block: 50px 70px; }
+.kicker { display: inline-flex; align-items: center; gap: 10px; font: 600 13px/1 var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--plum); }
+.kicker::before { content: ""; width: 34px; height: 2px; background: var(--leaf); }
+.hero h1 { font-size: clamp(46px, 6.2vw, 88px); line-height: .98; margin: 18px 0 18px; color: var(--plum-deep); }
+.hero h1 em { display: block; }
+.hero p { font-size: 18.5px; color: var(--mute); max-width: 44ch; margin: 0 0 28px; }
+.ctas { display: flex; gap: 10px; flex-wrap: wrap; }
+.proof { display: flex; gap: 22px; flex-wrap: wrap; margin-top: 34px; padding-top: 22px; border-top: 1px solid var(--line); }
+.proof div b { display: block; font: 800 28px/1 var(--serif); color: var(--plum); }
+.proof div span { font-size: 13.5px; color: var(--mute); }
+.collage { position: relative; height: 600px; }
+.collage figure { position: absolute; margin: 0; overflow: hidden; background: #ddd; box-shadow: 0 30px 60px rgba(74,10,68,.22); }
+.collage img { width: 100%; height: 100%; object-fit: cover; }
+.c1 { left: 0; top: 40px; width: 52%; height: 72%; border-radius: 200px 200px 24px 24px; }
+.c2 { right: 0; top: 0; width: 44%; height: 50%; border-radius: 24px; }
+.c3 { right: 6%; bottom: 0; width: 40%; height: 44%; border-radius: 24px 24px 200px 24px; }
+.seal { position: absolute; left: 40%; bottom: 38px; width: 132px; height: 132px; border-radius: 50%; background: var(--paper); display: grid; place-items: center; box-shadow: 0 18px 40px rgba(74,10,68,.2); z-index: 2; }
+.seal svg { width: 118px; height: 118px; animation: spin 26s linear infinite; }
+.seal b { position: absolute; font: italic 600 28px/1 var(--serif); color: var(--leaf-deep); }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+section { padding-block: 96px; }
+.eyebrow { font: 600 13px/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--leaf-deep); margin: 0 0 14px; }
+h2 { font-size: clamp(36px, 4.6vw, 60px); line-height: 1; margin: 0; color: var(--plum-deep); }
+.sub { color: var(--mute); font-size: 17.5px; max-width: 54ch; margin: 14px 0 0; }
+.head { display: flex; justify-content: space-between; align-items: end; gap: 20px; flex-wrap: wrap; margin-bottom: 40px; }
+
+/* MENU */
+.menuwrap { background: var(--paper); border-radius: 36px; padding: 40px; box-shadow: 0 24px 60px rgba(74,10,68,.07); }
+.tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 26px; }
+.tabs button { font: 600 15px/1 var(--sans); padding: 12px 18px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--lilac); color: var(--plum-deep); cursor: pointer; }
+.tabs button[aria-selected="true"] { background: var(--plum); border-color: var(--plum); color: #fff; }
+.menu { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 30px; }
+.item { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center; padding: 18px 0; border-bottom: 1px dashed var(--line); }
+.item[hidden] { display: none; }
+.item h3 { font: 700 21px/1.2 var(--serif); margin: 0 0 4px; color: var(--ink); }
+.item p { margin: 0; color: var(--mute); font-size: 14.5px; }
+.item .add { width: 46px; height: 46px; border-radius: 50%; border: 2px solid var(--plum); background: var(--paper); color: var(--plum); font-size: 22px; cursor: pointer; transition: all .2s; }
+.item.on .add { background: var(--leaf); border-color: var(--leaf); color: #fff; }
+.item.on h3 { color: var(--plum); }
+.note { font-size: 13.5px; color: var(--mute); margin: 18px 0 0; }
+
+/* booking drawer bar */
+.bar { position: fixed; left: 50%; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, calc(100% + 120px)); visibility: hidden; transition: transform .3s ease, visibility .3s; z-index: 30; display: flex; gap: 14px; align-items: center; background: var(--plum-deep); color: #fff; border-radius: 999px; padding: 10px 10px 10px 24px; box-shadow: 0 18px 40px rgba(74,10,68,.35); width: min(600px, calc(100% - 28px)); }
+.bar.show { transform: translate(-50%, 0); visibility: visible; }
+.bar span { flex: 1; font-weight: 600; }
+dialog.book { border: 0; border-radius: 28px; padding: 0; width: min(520px, calc(100% - 24px)); max-height: calc(100dvh - 30px); color: var(--ink); box-shadow: 0 30px 80px rgba(0,0,0,.35); }
+dialog.book::backdrop { background: rgba(36,19,34,.6); }
+.book form { padding: 26px; display: grid; gap: 14px; }
+.book h2 { font-size: 34px; }
+.book ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.book li { background: var(--plum-soft); color: var(--plum-deep); border-radius: 999px; padding: 6px 12px; font-weight: 600; font-size: 14px; }
+.book label { display: grid; gap: 6px; font-weight: 700; font-size: 14px; }
+.book input, .book select, .book textarea { font: 400 16px/1.4 var(--sans); padding: 12px 14px; border: 1.5px solid var(--line); border-radius: 14px; background: var(--lilac); color: var(--ink); }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.acts { display: flex; gap: 10px; } .acts .btn { flex: 1; }
+
+/* rooms band */
+.rooms { display: grid; grid-template-columns: 1.1fr .9fr; gap: 0; border-radius: 36px; overflow: hidden; background: var(--plum-deep); color: #f6e6f3; }
+.rooms .pics { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 6px; min-height: 520px; }
+.rooms .pics img { width: 100%; height: 100%; object-fit: cover; }
+.rooms .pics img:first-child { grid-row: span 2; }
+.rooms > div:last-child { padding: 56px 50px; align-self: center; }
+.rooms h2 { color: #fff; } .rooms h2 em { color: #b6e08f; }
+.rooms p { color: #e7cfe3; font-size: 17.5px; }
+.ticks { list-style: none; padding: 0; margin: 22px 0 28px; display: grid; gap: 12px; }
+.ticks li { display: flex; gap: 12px; align-items: center; }
+.ticks li::before { content: ""; flex: 0 0 22px; height: 22px; border-radius: 50%; background: var(--leaf) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12l4 4 8-8' fill='none' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") center/14px no-repeat; }
+
+/* team */
+.team { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.team figure { margin: 0; border-radius: 24px; overflow: hidden; aspect-ratio: 3 / 4; background: #ddd; }
+.team img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; transition: transform .6s ease; }
+.team figure:hover img { transform: scale(1.05); }
+.pride { display: grid; grid-template-columns: .9fr 1.1fr; gap: 34px; align-items: center; margin-top: 40px; background: var(--leaf-soft); border-radius: 30px; padding: 30px; }
+.pride img { border-radius: 20px; width: 100%; aspect-ratio: 7 / 5; object-fit: cover; }
+.pride h3 { font-size: 30px; margin: 0 0 10px; color: var(--plum-deep); }
+.pride p { color: var(--mute); margin: 0; }
+
+/* reviews */
+.quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+blockquote { margin: 0; background: var(--paper); border-radius: 26px; padding: 30px; border: 1px solid var(--line); }
+blockquote:nth-child(2) { background: var(--plum); color: #fff; border-color: var(--plum); }
+blockquote:nth-child(2) cite { color: #e6c8e0; }
+blockquote .st { color: #f2b01e; letter-spacing: 2px; margin-bottom: 12px; }
+blockquote p { margin: 0 0 18px; font: italic 500 20px/1.45 var(--serif); }
+blockquote cite { font-style: normal; font-weight: 700; font-size: 14px; color: var(--plum); }
+
+/* visit */
+.visit { display: grid; grid-template-columns: 1fr 1.1fr; gap: 40px; align-items: center; }
+.info { display: grid; gap: 12px; margin: 22px 0 26px; }
+.info div { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 14px 18px; display: flex; justify-content: space-between; gap: 12px; font-weight: 600; }
+.info small { color: var(--mute); font-weight: 500; text-align: right; }
+.map { border-radius: 30px; overflow: hidden; border: 8px solid var(--paper); box-shadow: 0 20px 40px rgba(74,10,68,.1); aspect-ratio: 4 / 3.3; background: #eee; }
+.map iframe { width: 100%; height: 100%; border: 0; display: block; }
+.open { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; color: var(--leaf-deep); }
+.open i { width: 9px; height: 9px; border-radius: 50%; background: var(--leaf); box-shadow: 0 0 0 4px rgba(115,173,75,.25); }
+.open.closed { color: var(--plum); } .open.closed i { background: var(--plum); box-shadow: 0 0 0 4px rgba(113,17,104,.2); }
+
+footer { background: var(--plum-deep); color: #e7cfe3; padding-block: 44px 110px; margin-top: 40px; }
+footer .wrap { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; align-items: center; }
+footer img { width: 150px; background: #fff; border-radius: 18px; padding: 8px 12px; }
+footer i { font-family: var(--serif); color: #b6e08f; }
+
+.dock { position: fixed; left: 0; right: 0; bottom: 0; display: none; gap: 8px; padding: 10px max(14px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(14px, env(safe-area-inset-left, 0px)); background: rgba(251,246,250,.95); backdrop-filter: blur(8px); border-top: 1px solid var(--line); z-index: 25; }
+.dock .btn { flex: 1; }
+.rv { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+.rv.in { opacity: 1; transform: none; }
+
+@media (max-width: 1000px) {
+  .hero, .rooms, .visit, .pride { grid-template-columns: 1fr; }
+  .collage { height: 480px; max-width: 620px; }
+  .menu { grid-template-columns: 1fr; }
+  .team { grid-template-columns: repeat(2, 1fr); }
+  .quotes { grid-template-columns: 1fr; }
+  .rooms > div:last-child { padding: 40px 26px; }
+  .rooms .pics { min-height: 380px; }
+}
+@media (max-width: 760px) {
+  .top nav { display: none; }
+  .logo img { width: 120px; }
+  .menuwrap { padding: 24px 18px; border-radius: 26px; }
+  section { padding-block: 64px; }
+  .collage { height: 400px; }
+  .seal { width: 104px; height: 104px; left: 36%; } .seal svg { width: 92px; height: 92px; } .seal b { font-size: 22px; }
+  .dock { display: flex; }
+  .bar { bottom: calc(80px + env(safe-area-inset-bottom, 0px)); }
+}
+@media (max-width: 480px) { .row2 { grid-template-columns: 1fr; } .collage { height: 340px; } .header-btn { padding: 12px 16px; font-size: 14px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before { animation: none !important; transition: none !important; } .rv { opacity: 1; transform: none; } html { scroll-behavior: auto; } }
+</style>
+<style>body{margin:0}</style>
+</head>
+<body>
+
+<div class="demo">Demo website made for Dinel Massage &amp; Spa. Prices and final details to be confirmed by you.</div>
+
+<header class="top"><div class="wrap">
+  <a class="logo" href="#top" aria-label="Dinel Massage and Spa home"><img src="img/logo.svg" alt="Dinel Massage &amp; Spa" width="200" height="96"></a>
+  <nav aria-label="Sections"><a href="#menu">Treatments</a><a href="#spaces">Our spa</a><a href="#team">Team</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a></nav>
+  <a class="btn header-btn" href="#menu">Book a treatment</a>
+</div></header>
+
+<div class="wrap hero" id="top">
+  <div class="rv">
+    <span class="kicker">East Legon · Women-owned</span>
+    <h1>Unlimited luxury <em>for body, mind and soul.</em></h1>
+    <p>Professional massages, head spa, sauna, facials, waxing and pedicures, in calm, spotless rooms on Trinity Avenue. Open every day until 10:30 pm.</p>
+    <div class="ctas"><a class="btn" href="#menu">Choose your treatment</a><a class="btn ghost" href="tel:+233240079807">Call 024 007 9807</a></div>
+    <div class="proof">
+      <div><b>4.9 ★</b><span>170 Google reviews</span></div>
+      <div><b>7 days</b><span>a week, till 10:30 pm</span></div>
+      <div><b>Sauna</b><span>on site</span></div>
+    </div>
+  </div>
+  <div class="collage rv" aria-hidden="false">
+    <figure class="c1"><img src="img/neon.webp" alt="Dinel treatment room glowing in purple light" width="1125" height="1500"></figure>
+    <figure class="c2"><img src="img/stones.webp" alt="Hot stones and a green leaf" width="736" height="487"></figure>
+    <figure class="c3"><img src="img/candle.webp" alt="Candlelight in a Dinel treatment room" width="1125" height="1500"></figure>
+    <div class="seal" aria-hidden="true">
+      <svg viewBox="0 0 120 120"><defs><path id="circ" d="M60 60 m-46 0 a46 46 0 1 1 92 0 a46 46 0 1 1 -92 0"/></defs><text font-family="DM Sans, Arial" font-size="11" font-weight="700" letter-spacing="4.2" fill="#711168"><textPath href="#circ">RELAX · RESTORE · RENEW · </textPath></text></svg>
+      <b>4.9</b>
+    </div>
+  </div>
+</div>
+
+<section id="menu" style="padding-top:20px">
+  <div class="wrap">
+    <div class="head rv"><div><p class="eyebrow">Treatment menu</p><h2>Choose what your <em>body</em> needs.</h2><p class="sub">Tap <b>+</b> on anything you'd like. We'll put your list together and you send it to us on WhatsApp with your preferred day and time.</p></div></div>
+    <div class="menuwrap rv">
+      <div class="tabs" role="tablist" aria-label="Treatment categories">
+        <button type="button" role="tab" aria-selected="true" data-cat="all">All</button>
+        <button type="button" role="tab" aria-selected="false" data-cat="massage">Massages</button>
+        <button type="button" role="tab" aria-selected="false" data-cat="body">Body &amp; sauna</button>
+        <button type="button" role="tab" aria-selected="false" data-cat="skin">Skin &amp; waxing</button>
+        <button type="button" role="tab" aria-selected="false" data-cat="nails">Hands &amp; feet</button>
+      </div>
+      <div class="menu" id="menuList">
+        <div class="item" data-cat="massage"><div><h3>Swedish massage</h3><p>Long, flowing strokes to melt stress away.</p></div><button class="add" type="button" aria-label="Add Swedish massage">+</button></div>
+        <div class="item" data-cat="massage"><div><h3>Deep tissue massage</h3><p>Firm pressure for tight muscles and knots.</p></div><button class="add" type="button" aria-label="Add Deep tissue massage">+</button></div>
+        <div class="item" data-cat="massage"><div><h3>Thai massage</h3><p>Stretching and pressure points for full-body release.</p></div><button class="add" type="button" aria-label="Add Thai massage">+</button></div>
+        <div class="item" data-cat="massage"><div><h3>Hot stone massage</h3><p>Warm stones ease tension deep in the muscles.</p></div><button class="add" type="button" aria-label="Add Hot stone massage">+</button></div>
+        <div class="item" data-cat="body"><div><h3>Head spa treatment</h3><p>Scalp cleanse and massage, a guest favourite.</p></div><button class="add" type="button" aria-label="Add Head spa treatment">+</button></div>
+        <div class="item" data-cat="body"><div><h3>Sauna session</h3><p>Sweat it out and relax before or after your massage.</p></div><button class="add" type="button" aria-label="Add Sauna session">+</button></div>
+        <div class="item" data-cat="skin"><div><h3>Facial</h3><p>Deep cleanse and glow for tired skin.</p></div><button class="add" type="button" aria-label="Add Facial">+</button></div>
+        <div class="item" data-cat="skin"><div><h3>Waxing</h3><p>Smooth, clean results with professional wax.</p></div><button class="add" type="button" aria-label="Add Waxing">+</button></div>
+        <div class="item" data-cat="nails"><div><h3>Pedicure</h3><p>Soak, scrub and polish for happy feet.</p></div><button class="add" type="button" aria-label="Add Pedicure">+</button></div>
+        <div class="item" data-cat="nails"><div><h3>Manicure</h3><p>Neat, polished hands.</p></div><button class="add" type="button" aria-label="Add Manicure">+</button></div>
+      </div>
+      <p class="note">Prices and durations to be confirmed by Dinel. Couples and group bookings welcome, just mention it.</p>
+    </div>
+  </div>
+</section>
+
+<div class="bar" id="bar" role="status" aria-live="polite"><span id="barText">0 treatments selected</span><button class="btn leaf" type="button" id="review">Book now</button></div>
+
+<dialog class="book" id="bookBox" aria-labelledby="bookTitle">
+  <form method="dialog" id="bookForm">
+    <h2 id="bookTitle">Your booking</h2>
+    <ul id="picked"></ul>
+    <div class="row2">
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>People<select name="people"><option>Just me</option><option>2 (couple)</option><option>3 or more</option></select></label>
+    </div>
+    <div class="row2">
+      <label>Day<input type="date" name="day" required></label>
+      <label>Time<select name="time"><option>Morning</option><option>Afternoon</option><option>Evening</option></select></label>
+    </div>
+    <label>Anything we should know? (optional)<textarea name="extra" rows="2" placeholder="Pressure preference, injuries, occasion…"></textarea></label>
+    <div class="acts"><button type="button" class="btn ghost" id="closeBook">Keep browsing</button><button type="submit" class="btn">Send on WhatsApp</button></div>
+  </form>
+</dialog>
+
+<section id="spaces" style="padding-top:0">
+  <div class="wrap">
+    <div class="rooms rv">
+      <div class="pics">
+        <img src="img/room-maroon.webp" alt="Treatment room with a massage bed and soft towels" loading="lazy">
+        <img src="img/reception.webp" alt="Dinel reception with treatment menu banner" loading="lazy">
+        <img src="img/logo-room.webp" alt="Massage bed dressed with a Dinel Massage &amp; Spa towel" loading="lazy" style="object-position:50% 70%">
+      </div>
+      <div>
+        <p class="eyebrow" style="color:#b6e08f">Our spa</p>
+        <h2>Calm, <em>clean</em> and made for you.</h2>
+        <p>Guests talk about our spacious rooms, clean facilities and respectful staff. Leave the city outside and breathe.</p>
+        <ul class="ticks">
+          <li>Spacious, private treatment rooms</li>
+          <li>Sauna on site</li>
+          <li>Free parking</li>
+          <li>Card and mobile payments accepted</li>
+        </ul>
+        <a class="btn leaf" href="#menu">Book a treatment</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="team" style="padding-top:0">
+  <div class="wrap">
+    <div class="head rv"><div><p class="eyebrow">Our team</p><h2>Experienced, <em>caring</em> hands.</h2><p class="sub">Certified massage therapists who listen to what your body needs. Better health, one massage at a time.</p></div></div>
+    <div class="team">
+      <figure class="rv"><img src="img/owner.webp" alt="Dinel therapist in white uniform" loading="lazy"></figure>
+      <figure class="rv"><img src="img/therapist.webp" alt="Dinel therapist in mint scrubs" loading="lazy"></figure>
+      <figure class="rv"><img src="img/team-blue.webp" alt="Smiling Dinel therapist in blue scrubs" loading="lazy"></figure>
+      <figure class="rv"><img src="img/team-green.webp" alt="Dinel team member in green at reception" loading="lazy"></figure>
+    </div>
+    <div class="pride rv">
+      <img src="img/facial.webp" alt="Dinel therapist giving a facial treatment" loading="lazy" style="object-position:50% 40%">
+      <div><p class="eyebrow">We invest in our people</p><h3>Happy team, happy guests.</h3><p>We celebrate and reward our staff for their loyalty and hard work, because the care you feel on the table starts with how we treat our team.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" style="padding-top:0">
+  <div class="wrap">
+    <div class="head rv"><div><p class="eyebrow">Guest reviews</p><h2>4.9 stars from <em>170</em> guests.</h2></div></div>
+    <div class="quotes">
+      <blockquote class="rv"><div class="st">★★★★★</div><p>"I had such a relaxing experience. The staff were very professional. Everything was organized, clean, and comfortable. I left feeling completely refreshed."</p><cite>Dennis K. · Google review</cite></blockquote>
+      <blockquote class="rv"><div class="st">★★★★★</div><p>"A very good place for a professional service if you happen to visit Ghana. Great service, friendly staff and nice atmosphere."</p><cite>Joyce K. · Google review</cite></blockquote>
+      <blockquote class="rv"><div class="st">★★★★★</div><p>"A very big thank you to Dinel Spa for the amazing head spa treatment. My hair hasn't felt relaxed in a very long time."</p><cite>Google review · head spa</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="visit" style="padding-top:0">
+  <div class="wrap visit">
+    <div class="rv">
+      <p class="eyebrow">Visit us</p>
+      <h2>Trinity Avenue, <em>East Legon.</em></h2>
+      <p style="margin:14px 0 0"><span class="open" id="openNow"><i></i><span id="openText">Open today</span></span></p>
+      <div class="info">
+        <div>Monday – Saturday <small>9:30 am – 10:30 pm</small></div>
+        <div>Sunday <small>10:30 am – 10:30 pm</small></div>
+        <div>Phone &amp; WhatsApp <small>024 007 9807</small></div>
+        <div>Appointments <small>recommended</small></div>
+      </div>
+      <div class="ctas"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Dinel%20Massage%20and%20Spa%20Trinity%20Ave%20Accra" target="_blank" rel="noopener">Directions</a><a class="btn ghost" href="tel:+233240079807">Call us</a></div>
+    </div>
+    <div class="map rv"><iframe title="Map showing Dinel Massage and Spa on Trinity Avenue, East Legon" src="https://www.google.com/maps?q=Dinel+Massage+and+Spa,+Trinity+Ave,+Accra&ll=5.6500275,-0.1687391&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </div>
+</section>
+
+<footer><div class="wrap"><img src="img/logo.svg" alt="Dinel Massage &amp; Spa" width="200" height="96"><span><i>…unlimited luxury for body, mind and soul…</i></span><span>Trinity Ave, East Legon · 024 007 9807</span></div></footer>
+
+<div class="dock"><a class="btn" href="#menu">Book</a><a class="btn ghost" href="tel:+233240079807">Call</a></div>
+
+<script>
+(() => {
+  const WA = '233240079807';
+  const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .1 }) : null;
+  document.querySelectorAll('.rv').forEach(el => io ? io.observe(el) : el.classList.add('in'));
+
+  // open now (Accra = UTC)
+  const n = new Date(), d = n.getUTCDay(), m = n.getUTCHours() * 60 + n.getUTCMinutes();
+  const start = d === 0 ? 630 : 570, end = 1350, open = m >= start && m < end;
+  const on = document.getElementById('openNow'), ot = document.getElementById('openText');
+  if (open) ot.textContent = 'Open now · until 10:30 pm';
+  else { on.classList.add('closed'); ot.textContent = m < start ? 'Opens today at ' + (d === 0 ? '10:30 am' : '9:30 am') : 'Closed now · opens tomorrow'; }
+
+  // tabs
+  const items = [...document.querySelectorAll('.item')];
+  document.querySelectorAll('.tabs button').forEach(t => t.onclick = () => {
+    document.querySelectorAll('.tabs button').forEach(x => x.setAttribute('aria-selected', x === t));
+    items.forEach(i => i.hidden = t.dataset.cat !== 'all' && i.dataset.cat !== t.dataset.cat);
+  });
+
+  // picks
+  const picked = new Set(), bar = document.getElementById('bar'), barText = document.getElementById('barText'), list = document.getElementById('picked');
+  const render = () => {
+    barText.textContent = picked.size + (picked.size === 1 ? ' treatment' : ' treatments') + ' selected';
+    bar.classList.toggle('show', picked.size > 0);
+    list.innerHTML = ''; picked.forEach(p => { const li = document.createElement('li'); li.textContent = p; list.appendChild(li); });
+  };
+  items.forEach(i => i.querySelector('.add').onclick = () => {
+    const name = i.querySelector('h3').textContent;
+    if (picked.has(name)) { picked.delete(name); i.classList.remove('on'); i.querySelector('.add').textContent = '+'; }
+    else { picked.add(name); i.classList.add('on'); i.querySelector('.add').textContent = '✓'; }
+    render();
+  });
+  const box = document.getElementById('bookBox'), f = document.getElementById('bookForm');
+  document.getElementById('review').onclick = () => box.showModal();
+  document.getElementById('closeBook').onclick = () => box.close();
+  f.day.min = new Date().toISOString().slice(0, 10);
+  f.addEventListener('submit', e => {
+    e.preventDefault();
+    let msg = 'Hello Dinel Massage & Spa! I would like to book:\n' + [...picked].map(p => '- ' + p).join('\n');
+    msg += '\n\nName: ' + f.name.value + '\nPeople: ' + f.people.value + '\nDay: ' + new Date(f.day.value + 'T00:00').toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'short' }) + ' (' + f.time.value.toLowerCase() + ')';
+    if (f.extra.value) msg += '\nNote: ' + f.extra.value;
+    msg += '\n\nPlease confirm the time and price. Thank you!';
+    window.open('https://wa.me/' + WA + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+  });
+})();
+</script>
+
+</body>
+</html>

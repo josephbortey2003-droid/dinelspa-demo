@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 96" role="img" aria-label="Dinel Massage &amp; Spa">
+  <g fill="#73ad4b">
+    <path d="M96 30c-8-3-12-11-9-21 8 3 12 11 9 21z"/>
+    <path d="M100 31c2-10 10-15 20-14-2 10-10 15-20 14z"/>
+  </g>
+  <path d="M40 62c-10-4-12-14-2-18 8-3 18 0 24-3 10-5 22-6 34-6 18 0 34 3 46 8 8 3 14 6 18 9" fill="none" stroke="#711168" stroke-width="5" stroke-linecap="round"/>
+  <path d="M40 62c6 4 16 2 22-2" fill="none" stroke="#711168" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#711168">
+    <ellipse cx="78" cy="38" rx="6" ry="4.2"/><ellipse cx="94" cy="36" rx="7" ry="4.6"/><ellipse cx="111" cy="38" rx="6.5" ry="4.4"/><ellipse cx="127" cy="42" rx="5.5" ry="3.8"/>
+  </g>
+  <path d="M52 72 Q 110 62 178 70" fill="none" stroke="#73ad4b" stroke-width="5" stroke-linecap="round"/>
+  <text x="100" y="93" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-weight="800" font-size="15" fill="#711168">Dinel Massage &amp; Spa</text>
+</svg>
